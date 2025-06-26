@@ -40,11 +40,10 @@ class _StateScreenState extends State<StateScreen> with TickerProviderStateMixin
 
                 if(!snapshot.hasData){
                   return Expanded(
-                    flex: 1,
-                      child:SpinKitFadingCircle(
-                        size: 50,
-                        controller: _controller,
-                  color: Colors.white,)
+                    child: SpinKitFadingCircle(
+                      size: 50,
+                      controller: _controller,
+                                      color: Colors.white,),
                   );
                 }
                 else{
@@ -79,7 +78,7 @@ class _StateScreenState extends State<StateScreen> with TickerProviderStateMixin
 
                         ),),
                       Padding(
-                        padding: EdgeInsets.symmetric(vertical: MediaQuery.of(context).size.height*0.06),
+                        padding: EdgeInsets.symmetric(vertical: MediaQuery.of(context).size.height*0.04),
                         child: Card(
 
                           child: Column(
